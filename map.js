@@ -15,3 +15,14 @@ const UpperLetters = letters.map(function(letter){
 
 console.log(letters);
 console.log(UpperLetters);
+
+let estudents = ['David G', 'Paola F', 'Stiven S', 'Laura p'];
+let asistencia = estudents.map((nombre) => {
+    return{
+        nombre: nombre,
+        asistencia: false
+    }
+});
+
+console.log(estudents);
+console.log(asistencia);
