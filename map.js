@@ -85,4 +85,51 @@ console.log(new_Numbers);
 
 // map 6
 
-let students_1 = ['David', 'Orlando', 'Gomez', 'Alarcon']M
+let students_1 = ['David', 'Orlando', 'Gomez', 'Alarcon'];
+let assintance = students_1.map((name_1) => `${name_1}.`)
+
+console.log(students_1);
+console.log(assintance);
+console.log(students_1);
+
+//map 7 Productos
+
+let products = [
+    {name_prduct: 'arroz', precio_product: 25},
+    {name_prduct: 'frijol', precio_product: 35},
+    {name_prduct: 'perrejil', precio_product: 420},
+    {name_prduct: 'Maiz', precio_product: 60}
+];
+
+//Imprimir el nombre del prducto
+
+//let new_array = products.map((name_product) => `${name_product.name_prduct}.`)
+//console.log(new_array)
+
+
+//Sumar o restar una cantidad a la propiedad de precio de cada obeto
+
+// let sumar_products = products.map((sumar) =>{
+//     sumar.precio_product += 10; // incrementa el valor del precio en 10
+//     return sumar
+// });
+// console.log(sumar_products)
+
+//Filtrar productos por cierta condición
+// let expansive_products = products.filter((product) => product.precio_product > 110);
+// let cheap_product_name = expansive_products.map((product) => product.name_prduct);
+
+// console.log(cheap_product_name);
+// console.log(expansive_products);
+
+//Crear un nuevo objeto con una propiedad adicional a partir de los objetos originales
+
+let new_objects = products.map((product) => {
+    return {
+        name: product.name_prduct,
+        price: product.precio_product,
+        category: 'FOOD'
+    };
+});
+
+console.log(new_objects)
